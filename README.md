@@ -23,3 +23,9 @@ A very simple blazing fast tool written in Rust to generate Android Studio proje
 - Rename the root folder of the project to the template name you desire (e.g **MVP**)
 - Copy that into the **Templates** folder (e.g **Templates/MVP**)
 - Use the same name as **Template** input for your next project creations
+
+## Releases
+
+[Windows](https://github.com/forkachild/androgen/raw/master/androgen-windows.exe)
+[Linux](https://github.com/forkachild/androgen/raw/master/androgen-linux)
+[mac OS](https://github.com/forkachild/androgen/raw/master/androgen-osx)
