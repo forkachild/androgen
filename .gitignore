@@ -1,3 +1,4 @@
 /target
 Generated/
 .idea
+.cargo
