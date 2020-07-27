@@ -13,12 +13,17 @@ use config::{
     GENERATED_DIR
 };
 use input::prompt;
+use std::time::SystemTime;
 
 fn main() {
     let app_info = prompt_for_app_info();
-    generate_app(&app_info);
 
-    println!("App \"{}({})\" created with template \"{}\"", &app_info.app_name, &app_info.package, &app_info.template);
+    let start_time = SystemTime::now();
+    generate_app(&app_info);
+    let time_difference = SystemTime::now().duration_since(start_time).unwrap();
+
+    println!("\nApp \"{} ({})\" created with template \"{}\" in {} milliseconds",
+             &app_info.app_name, &app_info.package, &app_info.template, time_difference.as_millis());
 }
 
 fn generate_app(app_info: &AppInfo) {
