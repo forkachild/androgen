@@ -19,6 +19,7 @@ A very simple blazing fast tool written in Rust to generate Android Studio proje
 
 - Create an Android Studio project with the package name **com.androgen.template**
 - For the app name use **Template**
+- Goto **settings.gradle** and add/change the line **rootProject.name = "Template"**
 - Rename the root folder of the project to the template name you desire (e.g **MVP**)
 - Copy that into the **Templates** folder (e.g **Templates/MVP**)
 - Use the same name as **Template** input for your next project creations
